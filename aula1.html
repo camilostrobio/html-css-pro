@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso HTML e CSS PRO</title>
+        <meta charset="UTF-8"> <!-- corrige a acentuação-->
+    </head>
+
+    <body>
+        
+        <!-------------------------------------------------->
+        <!------------         AULA 01         ------------->
+        <!-------------------------------------------------->
+
+        <!-- OS H1 SERVEM PARA DAR IMPORTANCIA PARA O GOOGLE QUANDO O MESMO VAI INDEXAR A PAGINA, O SEJA, SE UM TEXTO EXTIVER DENTRO DE H1 ELE TERÁ MAIOR PESO DO QUE UM QUE ESTÁ DENTRO DE H2-->
+        <h1>Cabeçalho 1</h1>
+        <h2>Cabeçalho 2</h2>
+        <h3>Cabeçalho 3</h3>
+        <h4>Cabeçalho 4</h4>
+        <h5>Cabeçalho 5</h5>
+        <h6>Cabeçalho 6</h6>
+
+        <!-------------------------------------------------->
+        <!------------         AULA 02         ------------->
+        <!-------------------------------------------------->
+        <!-- Strong não serve para substituir o negrito é para dar relevancia (dar peso) aquela palavra-->
+        <p><strong>STRONG não é negrito ele da importancia ao texto em buscas do Google</strong></p>
+
+        <p><em>TEXTO ENFATIZADO apesar de parecer italico ele irá ter um peso tambem para o Google.</em></p>
+
+        <p><small>deixa o texto pequeno</small></p>
+        <p><del>mostra o texto com um risco no meio</del></p>
+        <p><ins>mostra o texto com um sublinhado embaixo</ins></p>
+        <p>Texto <sup>superior</sup></p>
+        <p>Texto <sub>inferior</sub></p>
+        <p><code>Texto com cara de código</code></p>
+
+        <!-------------------------------------------------->
+        <!------------         AULA 03         ------------->
+        <!-------------------------------------------------->
+
+        <!--ATRIBUTOS são como informações complementares que vão dentro das TAGs HtML. por exemplo podemos passar uma class= "classe" e assim utilizar um estilo para todas as TAGs que possuem essa classe, ou mesmo passar um title= "titulo" para fornecer um titulo a uma TAG-->
+        <abbr title="Este é o atributo TITLE da tag ABBR">Passe o mouse aqui</abbr>
+
+        <!-------------------------------------------------->
+        <!------------         AULA 04         ------------->
+        <!-------------------------------------------------->
+
+        <!--hyperlinks estes usam a TAG <A> conhecida como elemento de ancora, para criar um hyperlink você alem da TAG <A> precisa adcionar o ATRIBUTO HREF com o valor do caminho do seu link podemos fazer tres tipos de hyperlinks:-->
+
+        <br>
+        <!--ABSOLUTO: onde informamos o caminho completo do link-->
+        <a href="http://www.htmlecsspro.com">HTML e CSS Pro</a>
+
+        <br>
+        <!--RELATIVO: onde passamos uma parte do caminho (geralmente usado para navegaçao interna do site)-->
+        <a href="estilos/"> Navegando para minha pasta Estilos</a>
+
+        <br> 
+        <!--EMAiL: onde colocamos o mailto: e passamos nosso email este link irá abrir o aplicativo padrão de email ja com o email do destinatario preenchido com o link que preenchemos, podemos tambem passar ja o assunto do email, para isso colocamos o ponto de interrogação no final do email e utilizamos o atributo SUBJECT=Assunto do email-->
+        <a href="mailto:camilostrobio@hotmail.com?subject=Assunto do Email">E-mail contato</a>
+
+        <br>
+        <!--Para abrir um link em uma nova aba utilizamos o atributo TARGET= "BLANK"-->
+        <a target="blank" href="estilos/">Este link irá abrir em uma nova janela</a>
+        <br>
+        <a href="relogio.html">relogio em JAVASCRIPT</a>
+
+        <br>
+        <!--Para mostrar uma informação quando passamos o mouse encima do elemento utilizamos o atributo TITLE, ele tambem serve para melhorar a indexação do Google -->
+        <a title="para abrir o documento de css" href="estilos/style.css">Clique Aqui</a>
+
+
+        <!-------------------------------------------------->
+        <!------------         AULA 05         ------------->
+        <!-------------------------------------------------->
+
+        <br>
+        <!--Para colocar uma imagem no html usamos a TAG <IMG> então para colocar o caminho da imagem utilizamos o atributo SRC por padrão colocamos tambem o atributo ALT, que terá o texto exibido caso ocorra algum problema com a exibição da imagem-->
+        <img src="imagens/carro.jpg" alt="foto de carro antigo">
+
+        <!--Alem disso podemos colocar os atributos TITLE para melhorar a indexação do site pelo Google, podemos colocar os atributos WIDTH= LARGURA e HEIGHT ALTURA da imagem-->
+        <img title="foto de carro antigo" src="imagens/carro.jpg" width="384" height="240" alt="foto carro antigo">
+
+
+        <!-------------------------------------------------->
+        <!------------         AULA 05         ------------->
+        <!-------------------------------------------------->
+
+        <!--As Meta Tags auxiliam os mecanismos de busca (search engines) a encontrarem o seu site na web, isso porque são elas que dão um pequeno resumo sobre o que será encontrado na sua página, sendo assim uma forma de indexar o conteúdo web disponível, mas essas tags não se resumem apenas a melhoria para mecanismos de busca, veremos que existem Meta Tags com funções mais complexas e com funções que podem ajudar muito em momentos oportunos.-->
+
+        <!--KEYWORDS é utilizada para passar palavras chaves para a pagina pois assim o Google conseguirá raqui-lo melhor em uma busca realizada por alguem - Dê prioridade as palavras-chaves mais importantes ao usar a meta tag “keywords”, isso porque a maioria dos mecanismos de buscas leem apenas o início desta tag, então dê prioridade para colocar as palavras-chaves mais importantes logo no início.-->
+        <meta name="keywords" content="HTML CSS JAVASCRiPT PROGRAMAÇÃO">
+
+        <!--DESCRIPTION é usado para a descrisão do site tambem não é visivel porem é utilizada na hora da indexação-->
+        <meta name="description" content="Aprenda tudo sobre HTML e CSS">
+
+        <!--AUTHOR utilizada para dar os creditos da pagina para uma pessoa ou instituição (serve para quando alguem pesquisar aquela pessoa/instituição o Google trazer tambem a sua pagina como resultado-->
+        <meta name="author" content="Camilo Strobio Neto">
+
+        <!--atributo HTTP-EQUIV serve para controlar as ações do browser e também especificam melhor as informações, sendo que estas tem efeito equivalente quando são utilizadas diretamente na tag HTTP do cabeçalho. No caso estamos passando um atributo para recarregar a pagina "REFRESH" a cada 10 segundos-->
+        <meta http-equiv="refresh" content="100">
+        <!--aqui utilizamos para colocar as linguagens que nosso arquivo contem-->
+        <meta http-equiv="content-language" content="pt-br, en-US, fr" />
+
+        <!--CONTENT-TYPE: Esta tag é uma das mais importantes e jamais deve ser esquecida pois ela define qual o tipo de conteúdo que a página contém e qual a codificação deste conteúdo. Assim fica fácil saber se iremos abrir uma página HTML ou um arquivo PDF.-->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <!--serve para declarar os direitos autorais da página em questão.-->
+        <meta name="copyright" content="© 2019 CamiloSNeto" />
+
+        <!--PRAGMA:NO-CACHE: Esse atributo faz com que o navegador não armazene a página em cache. A diferença deste para o cache-control:no-cache é que ele serve para todas as versões do HTTP-->
+        <meta http-equiv="pragma" content="no-cache" />
+
+        <!--ROBOTS: Especifica informações para que o robô possa indexar sua página, suporta os seguintes valores:
+
+        All: Valor default, significa vazio, o robô de busca não recebe nenhuma informação.
+        Index: Os robôs de busca podem incluir a página normalmente.
+        Follow: Robôs podem indexar a página e ainda seguir os links para outras páginas que ela contém.
+        NoIndex:Os links podem ser seguidos, mas a página não é indexada.
+        NoFollow: A página é indexada, mas os links não são seguidos.
+        None: Os robôs podem ignorar a página.
+        NoArchive (Apenas Google): A página não é arquivada.-->
+        <meta name="robots" content="all"> 
+        <meta name="robots" content="index,nofollow"> 
+        <meta name="robots" content="noindex,follow"> 
+        <meta name="robots" content="none">
+
+        <!--RATING: Essa tag é útil para identificar a censura apropriada da página, ex: A página é inapropriada para menores de 18 anos por conter conteúdo erótico. Veja os valores suportados:
+
+        General: Para qualquer idade
+        14 years: Censura 14 anos
+        Mature: Para pessoas acima de 18 anos-->
+        <meta name="rating" content="general" />
+
+        <!--MAIS INFORMAÇÕES SOBRE META:
+        https://www.devmedia.com.br/html-meta-tags-entendendo-o-uso-de-meta-tags/30328#:~:text=Tipos%20de%20Meta%20Tags&text=atributo%20HTTP%2DEQUIV%20serve%20para,na%20tag%20HTTP%20do%20cabe%C3%A7alho.
+        -->
+
+        <!-------------------------------------------------->
+        <!------------         AULA 06         ------------->
+        <!-------------------------------------------------->
+  
+        <!--Formularios no HTML são um conjunto de outras TAGs (geralmente sendo INPUTs) servem para trazer um bloco de seleções/preenchimentos pré definidos para um usuario-->
+
+        <!--Para criar um formulario usamos a TAG FORM e tudo que for criado dentro dela fará parte deste formulario. 
+        o atributo ACTION é a ação que será tomada com esse formulario, neste caso ele está direcionando os dados preenchidos para uma pasta que chama envia-dados.php, o atributo METHOD recebe a forma de envio no caso de formulario podemos passar um GET onde os dados serão passados via URL ou um POST que fará os dados serem passados via container (geralmente JSON) por fim o atributo ENCTYPE é adcionado para permitir o trafego de imagens uma vez que se não colocarmos esse atributo as imagens não serão enviadas-->
+
+        <br><br>
+        <h2>FORMULÁRIO</h2>
+        <form action="envia-dados.php" method="POST" enctype="multipart/form-data">
+
+            <!--INPUT tag mais usada em FORMs com ela conseugimos criar caixas de textos, radioButtons checkBox select dentre outras-->
+            Nome: <input type="text" name="nome" id="txtNome"> 
+            Sobrenome: <input type="text" name="sobrenome" id="txtSobrenome"><br>
+            <br>
+            
+            <!--FIELDSET Serve para agrupar os componentes e fazer uma borda envolta dos que fazem parte do grupo-->
+            <fieldset>
+                <!--LEGEND Serve para dar uma legenda para o fieldset-->
+                <legend>DESENVOLVIMENTO</legend>
+
+                <!--RADIO serve para forçar o usuario a escolher apenas uma opção lembre que todos que farão parte do mesmo grupo precisam ter o mesmo NAME-->
+
+                <!--macete coloque o input dentro de um label que desta forma vocÊ poderá clicar encima do texto e selecionar-->
+                <label><input type="radio" name="linguagem" id="linguagem" value="html"> HTML</label>
+                <label ><input type="radio" name="linguagem" id="linguagem" value="css">CSS</label> 
+                <br><br>
+
+                <!--CHECKBOX agrupa opções pré determinadas igual ao radio, porem neste caso você pode selecionar tds as opções-->
+                <label><input type="checkbox" name="tecnologia" id="checkHtml" value="HTML"> Eu sei HTML</label> <br>
+                <label><input type="checkbox" name="tecnologia" id="checkCss" value="CSS"> Eu sei CSS</label>
+                <br><br>
+    
+                <!--SELECT essa caixa de texto agrupa varias opções, classico comboBox, para escrever uma mensagem inical (estilo selecione uma opção) basta criar um option com value=""-->
+                <select name="options" id="selOptions">
+                    <option value="" selected>Selecione uma Opção</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+
+                <select name="options" id="selOptions">
+                    <option value="" selected>Select com Categoria</option>
+                    <optgroup label="Front-End">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </optgroup>
+                    <optgroup label="Back-End">
+                        <option value="C#">C#</option>
+                        <option value=".NET Core">.NET Core</option>
+                    </optgroup>
+
+                </select>
+            </fieldset>
+
+            <p>Deixe aqui sua Mensagem:</p>
+
+
+            <!--TEXTAREA é uma caixa de texto grande onde você define a quantidade de caracteres que o usuario poderá colocar, usado geralmente para receber breves mensagens de interação do usuario com o site ex. usado para receber o texto da mensagem "fale conosco"-->
+            <textarea name="msgFaleConosco" id="msgFaleConosco" cols="100" rows="10"></textarea>
+
+            <br><br>
+
+            <!--BUTTON cria os botoes, caso você coloque o atributo TYPE=SUBMIT você criará um botão de ação para enviar os dados para o destino escolhido no ACTION do FORM-->
+            <button type="submit">Enviar</button>
+
+            <!--TYPE=RESET, limpa todos os dados que foram preenchidos no form-->
+            <button type="reset">Limpar</button>
+        </form>
+
+        <!-------------------------------------------------->
+        <!------------         AULA 07         ------------->
+        <!-------------------------------------------------->
+  
+        <!--Tabelas para criar uma tabela é muito simples usamos a TAG <TABLE> para adcionarmos linhas em nossas tabelas utilizamos a TAG <TR> e para adcionarmos células dentro das linhas utilizamos a TAG <TD> podemos tambem utilizar a TAG <TH> para adcionarmos cabeçalho-->
+        
+         <br><br>   
+         <!--cellpadding = serve para ajustar o espaço que ficara entre a palavra e as bordas da celula
+        cellspacing= serve para ajustar o tamanho do espaço que fica entre a borda principal da tabela e a borda de cada celula
+        border= serve para especificar a grossura da borda principal da tabela
+        -->
+        <table cellpadding="5" cellspacing="5" border="2">
+            
+            <!--TR serve para criar uma linha nova-->
+            <tr>
+                <!--TH serve para criar celulas para uma linha de cabeçalhos-->
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+            </tr>
+            <tr>
+                <!--TD serve para criar celulas para linhas comuns-->
+                <td>Camilo Strobio Neto</td>
+                <td>11 94917-4194</td>
+                <td>R.Joaquim Gomes</td>
+            </tr>
+            <tr>
+                <td>Mayara Pinheiro</td>
+                <td>11 94917-4545</td>
+                <td>R. Joaquim Gomes</td>
+            </tr>
+        </table>
+
+        <br>
+        <table cellpadding="10" cellspacing=0 border="1" >
+            <tr>
+                <!--COLSPAN: serve para ocupar o espaço de mais de uma celula, no exemplo ela oculpa o lugar de 2 celulas-->
+                <th colspan="2">Telefones</th>
+            </tr>
+            <tr>
+                <td>11 949174194</td>
+                <td>11 934312322</td>
+            </tr>
+        </table>
+        
+        <br>
+        <table cellpadding="10" cellspacing=0 border="1" >
+            <tr>
+                <!--ROWSPAN: serve para ocupar o espaço de mais de uma celula, no exemplo ela oculpa o lugar de 2 celulas-->
+                <th rowspan="3">Telefones</th>
+            </tr>
+            <tr>
+                <td>11 949174194</td>
+                <td>11 949174194</td>
+            </tr>
+            <tr>
+                <td>11 949174194</td>
+                <td>11 949174194</td>
+            </tr>
+        </table>
+
+        <h2>Exercicio de tabelas</h2>
+
+
+        <!--MEU CODIGO-->
+        <!--9 linhas e 4 colunas-->
+
+        <!--aqui eu passo border 1 para q a tabela tenha linhas, caso não passe ela será invisivel, logo em seguida eu ajusto os valores do espaçamento dentro da celula (cellpadding) e o espaçamento entre celulas (cellspacing) em 10-->
+        <table cellpadding="10" cellspacing="10" border="1">
+            <!--crio a primeira linha da tabela-->
+            <tr>
+                <!--crio a primeira célula da tabela crio com a tag TH pq é um cabeçalho, utilizo o atributo align para alinhar o texto no centro da célula, e uso o atributo colspan para passar o tamanho de duas células para ela (com esse atributo ela ocupará o espaço de duas celulas e nao apenas uma) -->
+                <th colspan="2" align="center">ESTE É O CABEÇALHO DO SITE</th>
+            <!--finalizo a primeira linha-->    
+            </tr>
+            
+            <!--crio a segunda linha-->
+            <tr>
+                <!--crio a primeira celula da segunda linha e fixo o tamanho lateral dela (largura) em 180 com o atributo width, pois desta forma eu fixo o tamanho dela independente do conteudo que ela receber o do dimencionamento que a tabela terá em tela-->
+                <td width="180">
+                    <!--Agora que vem a malandragem, como nesta célula eu precisava ter uma coluna com mais quatro celulas aqui nós criamos uma segunda tabela dentro da célula, esta tabela passamos os atributos cellpadding e cellspacing em 5 -->
+                    <table cellpadding="5" cellboarding="5">
+                        <!--Agora para criar apenas uma coluna com 4 celulas eu preciso então criar 4 linhas com uma celula cada. então para cada tag TR eu abro logo em seguida uma tag TD-->
+
+                        <!--como existe um espaço vazio no inicio e no final dessa coluna eu criei uma celula vazia no inicio e outra no final-->
+                        <tr><td> </td></tr>
+                        <!--aqui na segunda linha para receber o conteudo eu coloquei tambem um atributo aling para ele ficar centralizado-->
+                        <tr><td align="center">MENU DO SITE</td></tr>
+                        <!--Agora todos os outros tres conteudos são links então os criei com a tag A passando o atributo HREF vazio pois não estão criados os links para direcionamento os tres links são iguais-->
+                        <tr><td><a href="">Home</a></td></tr>
+                        <tr><td><a href="">Sobre a Empresa</a></td></tr>
+                        <tr><td><a href="">Contato</a></td></tr>
+                        <!--célula vazia para terminar a coluna-->
+                        <tr><td> </td></tr>
+                    <!--aqui finalizo a tabela que foi criada dentro da primeira célula da segunda linha-->    
+                    </table>
+                <!--Aqui finalizo a primeira célula da segunda linha-->    
+                </td>
+
+                <!--Agora como a segunda célula é simplesmente um espaço vazio eu simplesmente a abri e coloquei o texto dentro dela bem simples-->
+                <td >
+                    AQUI VAI O CONTEUDO DO SITE sera que se eu colocar mais código aqui esse caraio aumenta?
+                <!--finalizei a segunda célula da segunda linha-->    
+                </td>
+            <!--finalizei a segunda linha após ter criado duas células para a mesma-->    
+            </tr>
+
+            <!--agora irei iniciar a terceira linha nesta linha terei  que fazer algo similar a célula 1 da segunda linha, preciso criar uma tabela dentro da célula porem ao contrario da anterior, onde eu precisei criar apenas uma coluna com  4 células, desta vez eu tenho que criar ao contrario, preciso criar uma linha com 4 células-->
+            <tr>
+                <!--crio a célula que irá receber a tabela dentro, aqui utilizo o mesmo principio da linha um para fazer esta célula ocupar o tamanho de duas, utilizando o atributo colspan = 2-->
+                <td  colspan="2" >
+                    <!-- crio a tabela que irá ficar dentro da célula, aqui como eu precisava que as 4 células ocupassem todo o tamanho da célula eu utilizei o atributo width em 100% para que a tabela possua o mesmo tamanho da célula, e repare que não utilizei o cellspacing pois nao queria criar espaçamentos entre bordas (até pq a tabela precisa ser do mesmo tamanho da célula) e nem o border (pois essa tabela não possuia as divisoes aparentes-->
+                    <table cellpadding="1" width="100%">
+                        <!--aqui crio a linha da tabela normalmente-->
+                        <tr>
+                            <!--aqui ta todo o esquema, pois se temos uma tabela com tamanho em 100%, e precisamos inserir 4 células que possuam a mesma area então precisamos simplesmente dividir 100 por 4, o resultado é 25, logo precisamos que cada célula possua o tamanho de 25% e para centralizar os textos dentro da célula usamos o align-->
+                            <td width="25%" align="center">HTML</td>
+                            <td width="25%" align="center">CSS</td>
+                            <td width="25%" align="center">JAVASCRIPT</td>
+                            <td width="25%" align="center">JQUERY</td>
+                        <!--finalizo a linha-->
+                        </tr>
+                    <!--finalizo a tabela-->
+                    </table>
+                <!--finalizo a célula da terceira linha-->
+                </td>
+            <!--finalizo a terceira linha-->
+            </tr>
+
+            <!--agora para finalizar crio a ultima linha, esta linha funciona exatamente igual a primeira precisamos simplesmente criar uma linha possua uma célula que ocupe o espaço de duas e passarmos um texto centralizado-->
+            <tr>
+                <!--centralizo o texto na célula com o align center e uso o colspan para passar o tamanho de duas células para ela-->
+                <td colspan="2" align="center">
+                    ESTE É O RODAPÉ
+                <!--finalizo a célula-->
+                </td>
+            <!--finalizo a ultima linha da tabela principal-->
+            </tr>
+        <!--finalizo a tabela principal-->
+        </table>
+
+        <br><br><br>
+        <!--CODIGO CORRETO-->
+        <table cellspacing="10" cellpadding="10" border="1" >
+            <tr>
+                <th colspan="2">Este é o cabeçalho do site</th>
+            </tr>
+
+            <tr>
+                <td width="180">
+                    <table cellspacing="5" cellpadding="5">
+                        <tr>
+                            <th>Menu do Site</th>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Home</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Sobre a Empresa</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Contato</a></td>
+                        </tr>
+                       
+                    </table>
+                </td>
+                <td>
+                    Espaço para o conteudo do site, aqui podem ter varias outras paradas maneiras.
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <table cellspacing="1" cellpadding="1" width="100%">
+                        <tr>
+                            <td width="25%" align="center">HTML</td>
+                            <td width="25%" align="center">CSS</td>
+                            <td width="25%" align="center">JAVASCRIPT</td>
+                            <td width="25%" align="center">JQUERY</td>
+                        </tr>                     
+                    </table>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">Este é o rodapé do Site</td>
+            </tr>
+
+        </table>
+
+
+    </body>
+</html>

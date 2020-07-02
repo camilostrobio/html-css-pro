@@ -1,0 +1,9 @@
+div.tag{
+    font-weight: bold;
+    color: red;
+}
+
+div.conteudo{
+    font-style: italic;
+    font-size: 18px;
+}
