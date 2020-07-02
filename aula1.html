@@ -407,7 +407,7 @@
         <!--aula sobre a tag DIV, basicamente ela serve para agrupar elementos HTML e formata-los com CSS. A diferença entre DIV e SPAN é que span é usado com elementos embutidos e div e usado com elementos no nivel do bloco-->
 
         <!--Atualmente utilizamos DIV para construir dados não mais tabelas. A DIV funciona basicamente como um container, pois não altera o estado dos objetos que estão dentro dela, porem podemos utiliza-la para passar as classes de CSS.-->
-        <div>
+        <div align="center">
             <p>
                 Bom dia (tchu tchu tchu) <br>
                 O Sol ja nasceu la na fazendia <br>
@@ -416,7 +416,7 @@
             </p>
         </div>
 
-        <!--UL: cria uma lista não ordenada (aquela lista que não é de numeros que tem apenas a bolinha do lado do item)-->
+        <!--UL: cria uma lista não ordenada (aquela lista que não é de numeros que tem apenas a bolinha do lado do item). Essa aqui é muito usada para criar menus em sites-->
         <ul>
             <li>Item 01</li>
             <li>Item 02</li>
@@ -426,23 +426,36 @@
         </ul>
 
         <!--OL: cria uma lista ordenada (a que tem os numeros na frente do item, ao inves de bolinhas)-->
-        <ul>
+        <ol>
             <li>Item 01</li>
             <li>Item 02</li>
             <li>Item 03</li>
             <li>Item 04</li>
             <li>Item 05</li>
-        </ul>
+        </ol>
 
         <!--DL: usada para declarar uma lista de definição, ela é semelhante as outras listas porem aqui teremos que passar um TERMO <DT> e uma DESCRIÇÃO <DD>-->
         <dl>
             <dt>Item 01</dt>
             <dd>Descrição do Item 01</dd>
+            <dd>Segunda descrição do item 01</dd>
             <dt>Item 02</dt>
             <dd>Descrição do Item 02</dd>
             <dt>Item 03</dt>
             <dd>Descrição do Item 03</dd>
         </dl>
+
+        <!--IFRAME: Essa TAG serve basicamente para você carregar um outro site ou documento ou sei la o que, dentro do seu site. em outras palavras ela cria um container que serve para visualizar outro site dentro.-->
+
+        <!--IMPORTANTE: sempre use os atributos WIDTH e HEIGTH para definir o tamanho pq se não ele pegara o tamanho do site. Essa função não funciona com os sites famosos, eles não permitem a exibição em iframe-->
+
+        <iframe src="http://www.htmlecsspro.com" width="500" height="500" frameborder="0"></iframe>
+
+        <!-------------------------------------------------->
+        <!------------         AULA 09         ------------->
+        <!-------------------------------------------------->
+
+        
 
     </body>
 </html>
