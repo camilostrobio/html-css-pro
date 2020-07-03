@@ -1,3 +1,72 @@
-body{
-    background-color: blue;
+/*por default os navegadores possuem uma margin e um padding, então aqui estamos zerando esses valores*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    /*para deixa-las todas com tamanho 100% na tela*/
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+
+}
+
+.row div{
+    background-color: brown;
+    height: 80px;
+    float: left;
+}
+
+/*linha 01*/
+.linha1 .coluna{
+    width: 100%;
+}
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+
+/*linha 02
+-na linha dois temos dois blocos, e o espaço entre eles tem 4%. a conta que fizemos então é 100% - 4% = 96% agora só divide por 2 (pois são dois blocos) 96% / 2 = 48% esse é o tamanho do bloco então!
+*/
+.linha2 .coluna{
+    width: 48%;
+}
+/*porem se somente colocamos isso os dois blocos virão juntos e o espaço ficará no final da coluna ( bloco bloco espaço ) e o que precisamos é ( bloco espaço bloco ), para resolver isso passamos o atributo LAST-CHILD (ultimo filho) coluna, ou seja, se formos no html teremos dentro da DIV linha2 duas divs coluna (que são filhas de linha2) então quando passamos o last-child estamos nos referenciando a ultima coluna, e para posicionala a direita bastou passar o float: right*/
+.linha2 .coluna:last-child{
+    float: right;
+}
+
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+
+/*nesta terceira coluna não podemos utilizar o mesmo esquema da segunda, pois precisamos posicionar a do meio tambem. ( bloco espaço bloco espaço bloco ) então para fazer isso precisamos usar o margin-right, então primeiro fazemos a mesma conta que fizemos no anterior agora como temos dois espaços e cada espaço é 4% de tela então são 100% - 8% = 92% / 3 = 30.66% para cada bloco, então começamos definindo um width com 30.66% assim ele criará os blocos, porem todos veem grudados, agora iremos usar um margin-right (margem a direita) com 4% então nosso codigo ficará ( bloco espaço bloco espaço bloco ESPAÇO ) ou seja foi criada uma margem de 4% no lado direito de cada bloco. o problema é que dessa forma o ultimo bloco tambem ganhou uma margem e o total ficou com 104% desalinhado. para resolver isso usamos novamente o last-child so que dessa vez definimos com o margin-rigth: 0 dessa forma o ultimo filho terá a margem 0 e teremos os 100% da linha.
+ps. poderiamos ter resolvido a linha 2 dessa forma tbm e iremos resolver as outras linhas assim*/
+
+/*linha 3*/
+.linha3 .coluna{
+    width: 30.66%;
+    margin-right: 4%;
+}
+.linha3 .coluna:last-child{
+    margin-right: 0%;
+}
+
+/*linha 4*/
+.linha4 .coluna{
+    width: 22%;
+    margin-right: 4%;
+}
+.linha4 .coluna:last-child{
+    margin-right: 0%;
+}
+
+/*linha 5*/
+.linha5 .coluna{
+    width: 16.8%;
+    margin-right: 4%;
+}
+.linha5 .coluna:last-child{
+    margin-right: 0%;
 }
