@@ -1,0 +1,283 @@
+body{
+    /* define um ou varios tipos de fontes */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    /* define a largura do componente, detalhe se ele vier sozinho o height será definido proporcionalmente */
+    width: 300px;
+
+    /* define um espaçamento entre a borda do elemento principal e os seus componentes internos, esse espaçamento é definido sempre nos 4 cantos do elemento principal, e caso não caiba, ele irá aumentar o elemento principal, ex esse elemento possui 300px se eu colocar um padding de 100px seriam 300px + 200px (100 de cada lado) */
+    padding: 10px;
+
+    /* define a cor do fundo do elemento */
+    background: beige;
+}
+
+h1{
+    /* define a cor do elemento, neste caso por ser um elemento de texto ele mudará a cor do texto, se utilizassemos um background ele iria mudar o fundo do elemento ficar com tipo uma marcação. */
+    color: olivedrab;
+
+    /* Aqui esta sendo criada uma linha embaixo do elemento, essa linha possui 1px de largura, e é do estilo dotted (pontilhado) e possui a cor darkgreen */
+    border-bottom: 1px dotted darkgreen;
+
+    /* acrescenta um espaço acima do elemento aparentemente so aceita 0 ou 1  */
+    margin: 0;
+
+    /* acrescenta um espaçamento abaixo do elemento, neste caso ele aumentou a distancia entre o h1 e sua border-bottom  */
+    padding-bottom: 10px;
+
+    /* ajusta o tamanhho da fonte do elemento, caso fosse aplicado em um elemento de container todos os elementos de texto iriam assumir esse tamanho, caso não fosse definido nenhum tamanho para eles */
+    font-size: 30px;
+}
+
+p{
+    color: orange;
+    border-color: blue;
+    border-width: 4px;
+}
+
+/* para criar uma classe no CSS utilizamos o ponto antes do nome da classe.
+é interessante criar uma classe pois se formos editar por exemplo, apenas os paragrafos que estão dentro de uma div, podemos criar uma classe para a div no caso .classe-div e depois referenciar o p da seguinte forma .classe-div p { ... } desta forma somente iremos mexer nos paragrafos que estão dentro da div que aplica essa classe*/
+
+.minha-classe{
+    border: 4px dotted red;
+    padding: 20px;
+    width: 500px;
+    font-size: 30px;
+
+}
+
+div.minha-classe p{
+    color: green;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px black;
+}
+
+div.minha-classe input{
+    color: greenyellow;
+    background: black;
+    width: 250px;
+    height: 50px;
+    font-variant: inherit;
+} 
+
+/* para utilizar o ID é da mesma forma que da classe porem ao invés de utilizar o ponto utiliza-se a # a diferença entre usar class ou id é: supondo que vocÊ possua um html com 5 paragrafos então se vocÊ criar uma .classe-p você pode aplica-la para todos os p agora se você quiser aplcar somente em um p você pode criar um #id-p-especifico desta forma somente o p que possuir o id-p-especifico irá receber esse estilo, lembrando que id é unico, cada elemento terá o seu. */
+
+
+
+/*----------------------------------------------------------------------
+------------------------------AULA FONTES ------------------------------
+------------------------------------------------------------------------ 
+
+FONT-FAMILY: Define uma ou mais fontes para aplicar no texto do elemento, você coloca mais de uma, acrescentando , e a proxima fonte.
+
+FONT-SIZE: Define o tamanho da fonte.
+
+FONT-STYLE: Define o estilo de fonte (oblique normal italico...)
+
+FONT-VARIANT: Define uma variação para a fonte, por exemplo se colocar small-caps todas as letras ficarão maiusculas e a primeira letra ficará um pouco maior que o restante do texto
+
+FONT-WEIGHT: Define o texto em negrito, ou o peso na fonte.
+
+FONT: Define todos os elementos de fonte, vocÊ pode usa-la para definir tanto o tamanho da fonte a familia de fontes... enfim da pra usar todas as propriedades da fonte de uma só vez.
+
+------------------------------------------------------------------------
+------------------------ PROPRIEDADES DO TEXTO  ------------------------
+------------------------------------------------------------------------
+
+COLOR: define a cor do texto
+
+TEXT-ALIGN: Serve para alinhar o texto, ela recebe:
+    - left: ja vem como padrao e alinha o texto a esquerda
+    - rigth: alinha a direita
+    - center: centraliza o texto
+    - justify: deixa o texto justificado
+
+LETTER-SPACING: Define um espaçamento entre as letras.
+
+WORD-SPACING: Define um espaçamento entre as palavras. 
+
+TEXT-DECORATION: é um atalho para definir: 
+    - TEXT-DECORATION-LINE: Cria uma linha encima no meio ou embaixo de um texto (overline, line-through, underline), tambem server para remover o underline de um link (none)
+
+    - TEXT-DECORATION-STYLE: serve para mudar o stilo da linha criada no elemento acima, solid= default linha reta, wavy= ondinha, double= linha dupla
+
+    - TEXT-DECORATION-COLOR: define a cor da linha.
+
+TEXT-TRANSFORM: Transforma o texto em tudo maiusculo (uppercase) tudo minusculo (lowercase) ou deixa a primeira letra de cada palavra maiusculo (capitalize)
+
+TEXT-SHADOW: Cria uma sombra no texto, os dois primeiros valores são obrigatórios, que equivalem ao deslocamento lateral e vertical da sombra. o terceiro valor é para esfumaçar a sombra e o quarto valor é a cor da sombra.
+
+BACKGROUND-COLOR: Serve para mudar a cor do fundo do elemento
+
+BACKGROUND-IMAGE: Serve para adcionar uma imagem ao fundo do elemento.
+background-image: url("caminho da imagem")
+
+BACKGROUND-REPEAT: Serve para determinar se a imagem ira se repetir ou não, se sim se irá se repetir no eixo X ou Y. 
+
+BACKGROUND-POSITION: determina o posicionamento do background dentro do elemento, se vocÊ passar apenas um valor ele irá assumi-lo tanto para width quanto para height.
+
+BACKGROUND-ATTACHMENT: essa propriedade pode fixar obackground na tela (fixed) então para exibir o texto que não coube dentro do elemento usa-se a propriedade OVERFLOW: AUTO
+
+BACKGROUND-SIZE: autera o tamanho do background 
+
+BACKGROUND: assume todas as posições de backgrounds anteriores, porem para ele funcionar vocÊ não poderá passar nenhum das outros atributos background.
+
+BORDER-WIDTH: define a grossura da borda
+
+BORDER-STYLE: define o estilo da borda (lisa pontilhada tracejada...)
+
+BORDER-COLOR: define a cor da borda
+
+BORDER: atalho para poder passar todos os outros borders de uma vez.
+*/
+
+.solid{
+    border-style: solid;
+}
+.dotted{
+    border-style: dotted;
+}
+.dashed{
+    border-style: dashed;
+}
+.double{
+    border-style: double;
+}
+.groove{
+    border-style: groove;
+}
+.ridge{
+    border-style: ridge;
+}
+.inset{
+    border-style: inset;
+}
+.outset{
+    border-style: outset;
+}
+.hidden{
+    border-style: hidden;
+}
+
+/* BORDER-RADIUS: serve para arredondar a borda  */
+
+.bordaredonda{
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-style: solid;
+    padding: 10px;
+}
+.bordaredonda p {
+    text-align: center;
+}
+
+/*
+MARGIN: Serve para dar um espaçamento externo no objeto em questão, no exemplo abaixo o texto central possui um espaçamento de 30px de todas as estremidades (incluindo do outro texto que temos dentro do DIV
+
+temos tambem os atributos MARGIN-TOP (espaçamento acima), MARGIN-BOTTOM (espaçamento abaixo), MARGIN-RIGHT (espaçamento a direita) e MARGIN-LEFT(espaçamento a esquerda)
+*/
+
+.testemargin{
+    width: 400px; 
+    border-style: solid;
+    border-width: 3px;
+    border-color: orange;
+
+}
+
+.testemargin p{
+    background-color: yellow;
+    margin: 30px;
+}
+
+/*PADDING: Funciona exatamente como o MARGIN porem ao inves de ser um espaçamento externo é um espaçamento interno no margin se quisermos posicionar um P dentro de uma DIV com espaçamento de 10px para cada lado usamos o MARGIN:10PX no P. Ja no PADDING para posicionarmos um P dentro de um DIV com o espaçamento de 10px para cada lado, definimos no DIV um PADDING:10PX 
+
+assim como o margin no padding tambem temos o PADDING-TOP, PADDING-BOTTOM, PADDING-LEFT e PADDING-RIGHT*/
+
+/*IMPORTANTE: POSICIONAMENTO
+POSITION: usada para especificar como um elemento é posicionado e onde ele deve estar localizado na pagina do site*/
+
+/*RELATIVE: por padrão todos os elementos ja possuem um posicionamento relativo, porem quando tentamos passar LEFT, RIGHT, TOP ou BOTTOM ao elemento se não passarmos o POSITION: RELATIVE os atributos citados não funcionarão.
+
+**QUANDO DETERMINAMOS UM POSITION RELATIVE AO ESPAÇARMOS O OBJETO IREMOS EMPURRAR OS OUTROS ELEMENTOS*/
+
+.posicionamentorelative{
+    position: relative;
+    background-color: tomato;
+    width: 150px;
+    left: 50px;
+    margin-bottom: 10px;
+    
+}
+.posicionamentonaorelative{
+    background-color: tomato;
+    width: 150px;
+    left: 50px;
+    
+}
+
+/*ABSOLUTE: EXATAMENTE IGUAL O RELATIVE, POREM QUANDO ESPAÇAMOS O ELEMENTO NÃO AFETAMOS A POSIÇÃO DOS OUTROS ELEMENTOS */
+
+.posicionamentoabsolute{
+    position: absolute;
+    background-color: tomato;
+    width: 150px;
+    left: 50px;
+    margin-top: 10px; 
+}
+
+/*FIXED: COMO O PROPRIO NOME DIZ ELE FIXA O OBJETO NA TELA, UM BOM EXEMPLO DISSO É AS BARRAS DE MENU DOS SITES QUE MESMO VOCÊ ROLANDO O SITE PRA CIMA OU PARA BAIXO ELAS CONTINUAM NO MESMO LUGAR */
+
+/*IMPORTANTE: UM ELEMENTO ABSOLUTE SOMENTE IRÁ FICAR DENTRO DE OUTRO ELEMENTO SE O ELEMENTO QUE IRÁ CONTEM O ELEMENTO ABSOLUTE ESTIVER COM O POSITION RELATIVE (MESMO SE VC O COLOCAR DENTRO NA HIERARQUIA USANDO O HTML)
+
+CASO VOCÊ QUEIRA QUE O ELEMENTO ABSOLUTE SAIA DE DENTRO DO ELEMENTO RELATIVE VOCê UTILIZA VALORES NEGATIVOS, POIS QUANDO VOCê COLOCA UM BSOLUTE DENTRO DE UM RELATIVO, OS VALORES ABSOLUTOS SERÃO ENCIMA DO TAMANHO DO ELEMENTO RELATIVO. 
+(ESSE ESQUEMA DE COLOCAR VALORES NEGATIVOS É MUITO USADO NAQUELAS PROPAGANDAS POP-UP, É USADO PARA COLOCAR O BOTÃO DE FECHAR FORA DO BOX PRINCIPAL.)*/
+
+.elementoexternorelative{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    position: relative;
+}
+.elementoexterno{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 0, 0);
+}
+
+.elementointernoabsolute{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(47, 0, 255);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*FLOAT: USADO PARA "PUXAR" OS ELEMENTOS QUE ESTÃO AO SEU REDOR, ESSA PROPRIEDADE PODE RECEBER LEFT, RIGHT, TOP E BOTTOM SENDO QUE, SE RECEBER LEFT ELA IRÁ PUXAR PARA O SEU LADO ESQUERDO O PROXIMO ELEMENTO HTML EXEMPLO SE VOCÊ TIVER DUAS DIV E DECLARAR NA PRIMEIRA FLOAT: LEFT A PRIMEIRA IRA POSICIONAR A SEGUNDA EXATAMENTE AO SEU LADO ESQUERDO. QUANDO VOCÊ APLICA O FLOAT EM UM ELEMENTO E NÃO EXPLICITA O TAMANHO DELE, ELE IRÁ ASSUMIR O TAMANHO DO CONTEUDO DENTRO DELE.*/
+
+.divfloat-left{
+    background-color: teal;
+    float: left;
+    padding: 10px;
+}
+.divsem-float{
+    background-color: crimson;
+    padding: 10px;
+    float: left;
+    width: 350px;
+}
+
+/*CAMADAS: Z-INDEX (GERALMENTE O POVO CHAMA DE LAYER)
+BASICAMENTE PARA CRIARMOS UMA CAMADA, ISTO É SOBREPOR UM ELEMENTO A OUTRO NA SUA HIERARQUIA (MESMO QUE VISUALMENTE ELES APARENTEM ESTAR LADO A LADO) NÓS UTILIZAMOS A PROPRIEDADE Z-INDEX: INDICE, POR PADRÃO TODOS OS ELEMENTOS VEM COM Z-INDEX: 1 ENTÃO QUANDO QUEREMOS COLOCAR UM ELEMENTO ACIMA BASTA ATRIBUIR O Z-INDEX: 2
+*/
+
+/*OVERFLOW: AUTO - SERVE PARA CRIAR A BARRA DE ROLAGEM LATERAL OU HORIZONTAL PARA ASSIM QUANDO O TEXTO ULTRAPASSAR A AREA DO ELEMENTO QUE ESTÁ RECEBENDO APARECERÃO AS BARRAS DE ROLAGEM */
