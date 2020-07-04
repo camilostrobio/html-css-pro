@@ -13,7 +13,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: #f71d1d;
+    color: #E94F37;
 }
 a:hover{
     text-decoration: none;
@@ -75,7 +75,7 @@ h1, h2{
 ----------------------------------------------------
 ----------------------------------------------------*/
 .bem-vindo{
-    background-color: #ff6969;
+    background-color:#C14953;
     padding: 20px 0;
     text-align: center;
 }
@@ -131,13 +131,13 @@ h1, h2{
 ----------------------------------------------------
 ----------------------------------------------------*/
 .artigos{
-    background-color: #EAA7A3;
+    background-color:#DCCCA3;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 .artigos-title{
     font-size: 30px;
-    color: #EF4F32;
+    color:#5C415D;
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 2px solid;
