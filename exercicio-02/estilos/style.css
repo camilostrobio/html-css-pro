@@ -1,0 +1,185 @@
+/*RESET - SERVE PARA RESETAR OS ELEMENTOS QUE VEEM COM VALORES PADRÃO
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #959595;
+}
+a{
+    text-decoration: none;
+    color: #f71d1d;
+}
+a:hover{
+    text-decoration: none;
+    color: #990000;
+}
+ul{
+    list-style: none;
+}
+
+h1, h2{
+    color: darkred;
+}
+/*GERAL USADO EM VARIOS ELEMENTOS 
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------*/
+
+.row{
+    width: 100%;
+    float: left;
+}
+
+.content{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/*HEADER
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------*/
+.header{
+    padding: 10px;
+}
+.header-logo{
+    float: left;
+}
+.header-logo h1 a{
+    color: #959595;
+}
+.header-logo h1 a span.html{
+    color: #016fba;
+}
+.header-logo h1 a span.css{
+    color: #e54d26;
+}
+
+.header-menu{
+    float: right;
+    padding: 9px 0;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*HEADER
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------*/
+.bem-vindo{
+    background-color: #ff6969;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bem-vindo .content{
+    width: 650px;
+}
+.bem-vindo .content h1{
+    color: #fff;
+}
+/*MAIN
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------*/
+.main{
+    padding: 30px 0;
+}
+.main-menu{
+    float: left;
+    width: 160px;
+    font-size: 18px;
+}
+.main-menu h1{
+    font-size: 20px;
+}
+.main-menu ul li{
+    margin-top: 20px;
+}
+
+.main-conteudo{
+    float: right;
+    width: 840px;
+}
+.main-conteudo h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.main-conteudo h1 a{
+    color: darkred;
+}
+.main-conteudo p{
+    margin-bottom: 30px;
+}
+.main-conteudo p a{
+    color: #959595;
+}
+.main-conteudo h1 a:hover, .main-conteudo p a:hover{
+    text-decoration: underline;
+} 
+
+/*FOOTER
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------*/
+.artigos{
+    background-color: #EAA7A3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.artigos-title{
+    font-size: 30px;
+    color: #EF4F32;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+
+}
+
+.artigos-coluna{
+    float: left;
+    text-align: justify;
+    width: 30.66%;
+    margin-right: 4%;
+}
+.artigos-coluna:last-child{
+    margin-right: 0;
+}
+.artigos-coluna h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.artigos-coluna p{
+    color: #990000;
+}
+.artigos-coluna a{
+    color: #990000;
+}
+.artigos-coluna a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/*FOOTER
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------*/
+
+.footer{
+    padding: 20px 0;
+    text-align: center;
+}
+.footer p{
+    font-size: 13px;
+}
