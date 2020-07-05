@@ -22,6 +22,11 @@ a:hover{
 ul{
     list-style: none;
 }
+/*esse hack serve para ajustar a imagem dentro do box independente do tamanho da imagem ela ira se adaptar*/
+img{
+    max-width: 100%;
+
+}
 
 
 /*-----------------------------------------------------------------------*/
@@ -92,4 +97,102 @@ ul{
 .header-menu ul li{
     display: inline-block;
     margin-left: 10px;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*----------------------------- BOAS VINDAS -----------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.boasvindas{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+.boasvindas h1{
+    color: #579add;
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.boasvindas p{
+    margin-bottom: 20px;
+}
+.boasvindas p a{
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.boasvindas p a:hover{
+    background-color: #476380;
+    color: #e7e7e7;
+    border-color: #e7e7e7;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*----------------------------- TECNOLOGIAS -----------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.tecnologias{
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+.tecnologias-title{
+    font-size: 22px;
+    color: #579add;
+    border-bottom: 4px solid;
+    border-color: #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.tecnologias-title span{
+    border-bottom: 4px solid;
+    border-color: #579add;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.tecnologias-col{
+    float: left;
+    width: 30.66%;
+    margin-right: 4%;
+    
+}
+.tecnologias-col:last-child{
+    margin-right: 0;
+}
+.tecnologias-col:hover .cover img{
+        transform: scale(1.2);
+}
+.tecnologias-col .cover{
+    height: 184px;
+    overflow: hidden;
+}
+.tecnologias-col img{
+    transition: all .20s ease;
+}
+
+.tecnologias-col h2{
+    color: #333333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.tecnologias-col p{
+     text-align: justify;
+}
+.tecnologias-col a{
+    color: #999999;
+}
+.tecnologias-col a:hover{
+    color: #579add;
 }
