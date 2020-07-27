@@ -223,6 +223,7 @@ input, textarea{
     color: #579add;
     font-size: 40px;
     font-weight: normal;   
+    word-spacing: 10px;
 }
 
 .contato-col{
